@@ -53,7 +53,7 @@ pipeline {
 					}
 				}
 			}
-			stage('Build Docker Image'){
+			stage('Publish Docker Image'){
 				steps{
 					script{
 						docker.withRegistry('','dockerhub'){
